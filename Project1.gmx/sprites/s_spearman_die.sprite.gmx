@@ -8,17 +8,17 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>432</bbox_right>
-  <bbox_top>17</bbox_top>
-  <bbox_bottom>384</bbox_bottom>
+  <bbox_right>68</bbox_right>
+  <bbox_top>3</bbox_top>
+  <bbox_bottom>60</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>437</width>
-  <height>407</height>
+  <width>69</width>
+  <height>64</height>
   <frames>
     <frame index="0">images\s_spearman_die_0.png</frame>
     <frame index="1">images\s_spearman_die_1.png</frame>

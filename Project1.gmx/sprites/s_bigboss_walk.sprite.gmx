@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>4</bbox_left>
-  <bbox_right>1233</bbox_right>
-  <bbox_top>2</bbox_top>
-  <bbox_bottom>1094</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>141</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>125</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1234</width>
-  <height>1115</height>
+  <width>142</width>
+  <height>128</height>
   <frames>
     <frame index="0">images\s_bigboss_walk_0.png</frame>
     <frame index="1">images\s_bigboss_walk_1.png</frame>

@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>36</bbox_left>
-  <bbox_right>486</bbox_right>
-  <bbox_top>7</bbox_top>
-  <bbox_bottom>457</bbox_bottom>
+  <bbox_left>5</bbox_left>
+  <bbox_right>61</bbox_right>
+  <bbox_top>1</bbox_top>
+  <bbox_bottom>57</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>488</width>
-  <height>506</height>
+  <width>62</width>
+  <height>64</height>
   <frames>
     <frame index="0">images\s_shiledman_attack_0.png</frame>
     <frame index="1">images\s_shiledman_attack_1.png</frame>
