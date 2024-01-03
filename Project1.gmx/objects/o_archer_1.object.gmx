@@ -7,7 +7,136 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// INIT
+enum archerStates { 
+    idle,
+    run,
+    attack,
+    jump,
+    hit
+}
+
+state = archerStates.idle;
+// ABILITIES
+spd = 5;
+grav = 1;
+grav = 1;
+moveX = 0;
+moveY = 0;
+jumpCounter = 0;
+jumpMax = 2;
+hp = 3;
+attackCounter = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// CONTROLLER
+switch (state) {
+    case archerStates.idle:
+        scr_idle();
+        break;
+    case archerStates.run:
+        scr_run();
+        break;
+    case archerStates.jump:
+        scr_jump();
+        break;
+    case archerStates.attack:
+        scr_attack();
+        break;
+}
+
+// Get movement input
+var move = pressD - pressA // move will be -1, 0, or 1
+moveX = spd * move;
+
+// PHYSICS
+// Apply gravity if not on a slope or ground
+if (!place_meeting(x, y + 1, o_ground) &amp;&amp; !place_meeting(x, y + 1, o_slope)) {
+    moveY += grav; // Apply gravity
+    if (moveY &gt; 9) moveY = 9; // Terminal velocity
+}
+
+// COLLISION
+// Ground collision
+if (place_meeting(x, y + moveY, o_ground)) {
+    while (!place_meeting(x, y + sign(moveY), o_ground)) {
+        y += sign(moveY); // Adjust y position until not colliding
+    }
+    moveY = 0;
+    jumpCounter = 0; // Reset jump counter when on the ground
+}
+
+// Slope collision
+var on_slope = false;
+if (place_meeting(x + moveX, y, o_slope)) {
+    on_slope = true;
+    moveY = -moveX; // Move up the slope
+}
+
+// Apply horizontal movement
+x += moveX;
+
+// Apply vertical movement and correct for slope collision
+if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, o_slope))) {
+    y += moveY;
+} else if (on_slope) {
+    // Correct the vertical position if the player is embedded in the slope
+    while (place_meeting(x, y, o_slope)) {
+        y -= 1; // Move the player up until they are no longer colliding with the slope
+    }
+}
+
+// SPRITE CONTROLLER
+// Update sprite direction based on input
+if (move != 0) {
+    image_xscale = sign(move);
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

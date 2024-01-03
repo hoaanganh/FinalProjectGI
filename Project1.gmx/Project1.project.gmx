@@ -25,6 +25,12 @@
     <sprite>sprites\s_bigboss_attack</sprite>
     <sprite>sprites\s_archer_idle1</sprite>
     <sprite>sprites\s_archer_attack1</sprite>
+    <sprite>sprites\s_ground</sprite>
+    <sprite>sprites\s_slope_1</sprite>
+    <sprite>sprites\s_slope_2</sprite>
+    <sprite>sprites\s_slope_3</sprite>
+    <sprite>sprites\s_slope_4</sprite>
+    <sprite>sprites\s_deal_dmg</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tileset</background>
@@ -32,6 +38,13 @@
     <background>background\bg_main</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_input.gml</script>
+    <script>scripts\scr_run.gml</script>
+    <script>scripts\scr_idle.gml</script>
+    <script>scripts\scr_jump.gml</script>
+    <script>scripts\scr_attack.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\o_wske</object>
     <object>objects\o_spearman</object>
@@ -39,6 +52,13 @@
     <object>objects\o_shiledman</object>
     <object>objects\o_boss</object>
     <object>objects\o_archer_1</object>
+    <object>objects\o_ground</object>
+    <object>objects\o_slope</object>
+    <object>objects\o_slope_1</object>
+    <object>objects\o_slope_2</object>
+    <object>objects\o_slope_3</object>
+    <object>objects\o_slope_4</object>
+    <object>objects\o_deal_dmg</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_main</room>

@@ -53,6 +53,20 @@
   <instances>
     <instance objName="o_wske" x="1408" y="416" name="inst_CD4C1E82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wske" x="768" y="32" name="inst_0117E9E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="0" y="256" name="inst_505FE140" locked="0" code="" scaleX="31" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="576" y="224" name="inst_0701DEE5" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="608" y="192" name="inst_B6439806" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="640" y="160" name="inst_99914729" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="672" y="128" name="inst_E46C11EE" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="704" y="96" name="inst_6CC40A60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="736" y="128" name="inst_61426EA4" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ground" x="736" y="96" name="inst_976C19EF" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_slope_1" x="544" y="224" name="inst_209865E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_slope_1" x="576" y="192" name="inst_95B27ED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_slope_1" x="608" y="160" name="inst_2602B3F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_slope_1" x="640" y="128" name="inst_F7FD1E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_slope_1" x="672" y="96" name="inst_AEB4FBCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_archer_1" x="64" y="160" name="inst_C9F5A95D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset" x="0" y="288" w="32" h="32" xo="128" yo="160" id="10000060" name="inst_205DFC41" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
