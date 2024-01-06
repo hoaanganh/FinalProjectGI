@@ -1,6 +1,6 @@
 scr_input();
 
-// sprite_index = Spr_Idle;
+sprite_index = s_archer_idle1;
 
 if (pressA or pressD) {
     state = archerStates.run;
