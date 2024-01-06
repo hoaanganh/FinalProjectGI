@@ -104,9 +104,20 @@ if (place_meeting(x, y + moveY, o_ground)) {
     jumpCounter = 0; // Reset jump counter when on the ground
 }
 
+if (place_meeting(x + moveX, y - 2, o_ground))
+{
+        while (not place_meeting(x + sign(moveX), y - 2, o_ground))
+        {
+            x += sign(moveX);
+        }
+                
+    moveX = 0;
+}
+
 // Slope collision
 var on_slope = false;
 if (place_meeting(x + moveX, y, o_slope)) {
+    jumpCounter = 0
     on_slope = true;
     moveY = -moveX; // Move up the slope
 }
